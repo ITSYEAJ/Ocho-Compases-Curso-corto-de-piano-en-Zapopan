@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Recital final: piano de cola bajo un reflector y el público al frente">
+<title>Recital final: piano de cola bajo un reflector y el público al frente</title>
+<defs><linearGradient id="cono" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2C14E" stop-opacity=".5"/><stop offset="1" stop-color="#F2C14E" stop-opacity=".05"/></linearGradient></defs>
+<rect width="1200" height="800" fill="#14342B"/>
+<path d="M600 0L380 640H820Z" fill="url(#cono)"/>
+<ellipse cx="600" cy="640" rx="260" ry="36" fill="#F2C14E" opacity=".22"/>
+<g fill="#1E4D40"><path d="M0 0H220C200 200 230 480 190 660H0Z"/><path d="M1200 0H980C1000 200 970 480 1010 660H1200Z"/></g>
+<g stroke="#163b31" stroke-width="10"><path d="M40 0C50 220 40 440 50 660M100 0C112 220 100 440 110 660M160 0C170 220 162 440 168 660M1160 0C1150 220 1160 440 1150 660M1100 0C1088 220 1100 440 1090 660M1040 0C1030 220 1038 440 1032 660"/></g>
+<rect y="640" width="1200" height="30" fill="#2a4a3f"/>
+<path d="M470 470L810 250" stroke="#0a120f" stroke-width="10" stroke-linecap="round"/>
+<path d="M470 474L840 262L862 300L470 476Z" fill="#0a120f"/>
+<path d="M620 452L650 380" stroke="#0a120f" stroke-width="5"/>
+<path d="M440 470H820C880 470 910 500 900 530C890 556 850 560 800 556H440Z" fill="#0a120f"/>
+<path d="M440 472H820C870 472 896 494 896 516" fill="none" stroke="#F2C14E" stroke-opacity=".5" stroke-width="3"/>
+<rect x="420" y="480" width="40" height="30" fill="#0a120f"/>
+<path d="M424 482H460" stroke="#EEF2EC" stroke-width="4"/>
+<path d="M470 556v84M600 556v84M860 552v88" stroke="#0a120f" stroke-width="14" stroke-linecap="round"/>
+<rect x="300" y="540" width="100" height="14" rx="4" fill="#0a120f"/>
+<path d="M312 554v86M388 554v86" stroke="#0a120f" stroke-width="8"/>
+<circle cx="352" cy="420" r="24" fill="#0a120f"/>
+<path d="M330 450C330 440 376 440 378 450L388 540H322Z" fill="#0a120f"/>
+<path d="M372 468L424 486" stroke="#0a120f" stroke-width="12" stroke-linecap="round"/>
+<path d="M332 412a24 24 0 0 1 36-14" stroke="#F2C14E" stroke-width="3" fill="none" stroke-opacity=".7" stroke-linecap="round"/>
+<g fill="#08100d"><circle cx="60" cy="720" r="28"/><path d="M10 800C12 750 108 750 110 800Z"/><circle cx="182" cy="728" r="28"/><path d="M132 800C134 758 230 758 232 800Z"/><circle cx="276" cy="736" r="28"/><path d="M226 800C228 766 324 766 326 800Z"/><circle cx="398" cy="720" r="28"/><path d="M348 800C350 750 446 750 448 800Z"/><circle cx="492" cy="728" r="28"/><path d="M442 800C444 758 540 758 542 800Z"/><circle cx="614" cy="736" r="28"/><path d="M564 800C566 766 662 766 664 800Z"/><circle cx="708" cy="720" r="28"/><path d="M658 800C660 750 756 750 758 800Z"/><circle cx="830" cy="728" r="28"/><path d="M780 800C782 758 878 758 880 800Z"/><circle cx="924" cy="736" r="28"/><path d="M874 800C876 766 972 766 974 800Z"/><circle cx="1046" cy="720" r="28"/><path d="M996 800C998 750 1094 750 1096 800Z"/><circle cx="1140" cy="728" r="28"/><path d="M1090 800C1092 758 1188 758 1190 800Z"/></g>
+</svg>

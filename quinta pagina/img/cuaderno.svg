@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Cuaderno de práctica, lápiz y metrónomo sobre papel pautado">
+<title>Cuaderno de práctica, lápiz y metrónomo sobre papel pautado</title>
+
+<rect width="800" height="800" fill="#1E4D40"/>
+<g transform="rotate(-6 400 400)">
+<rect x="150" y="170" width="460" height="540" fill="#EEF2EC"/>
+<path d="M180 230H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 239H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 248H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 257H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 266H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 310H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 319H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 328H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 337H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 346H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 390H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 399H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 408H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 417H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 426H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 470H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 479H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 488H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 497H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 506H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 550H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 559H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 568H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 577H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 586H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 630H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 639H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 648H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 657H580" stroke="#9aa89f" stroke-width="1.5"/><path d="M180 666H580" stroke="#9aa89f" stroke-width="1.5"/>
+</g>
+<g transform="rotate(4 400 400)">
+<rect x="210" y="130" width="380" height="500" rx="10" fill="#F2C14E"/>
+<rect x="210" y="130" width="380" height="500" rx="10" fill="none" stroke="#d9a431" stroke-width="4"/>
+<circle cx="210" cy="170" r="10" fill="none" stroke="#EEF2EC" stroke-width="5"/><circle cx="210" cy="216" r="10" fill="none" stroke="#EEF2EC" stroke-width="5"/><circle cx="210" cy="262" r="10" fill="none" stroke="#EEF2EC" stroke-width="5"/><circle cx="210" cy="308" r="10" fill="none" stroke="#EEF2EC" stroke-width="5"/><circle cx="210" cy="354" r="10" fill="none" stroke="#EEF2EC" stroke-width="5"/><circle cx="210" cy="400" r="10" fill="none" stroke="#EEF2EC" stroke-width="5"/><circle cx="210" cy="446" r="10" fill="none" stroke="#EEF2EC" stroke-width="5"/><circle cx="210" cy="492" r="10" fill="none" stroke="#EEF2EC" stroke-width="5"/><circle cx="210" cy="538" r="10" fill="none" stroke="#EEF2EC" stroke-width="5"/><circle cx="210" cy="584" r="10" fill="none" stroke="#EEF2EC" stroke-width="5"/>
+<text x="400" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="46" fill="#1E4D40">Ocho</text>
+<text x="400" y="334" text-anchor="middle" font-family="Georgia, serif" font-size="46" fill="#1E4D40">Compases</text>
+<path d="M300 366H500" stroke="#1E4D40" stroke-width="3"/>
+<text x="400" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#1E4D40">Cuaderno de práctica</text>
+<g transform="translate(360 440)"><ellipse cx="14" cy="92" rx="18" ry="13" transform="rotate(-20 14 92)" fill="#1E4D40"/><path d="M30 88V10C50 20 66 30 64 60" stroke="#1E4D40" stroke-width="7" fill="none" stroke-linecap="round"/></g>
+</g>
+<g transform="rotate(-38 560 640)"><rect x="380" y="628" width="330" height="26" rx="4" fill="#e8b04a"/><path d="M710 628l40 13-40 13z" fill="#e9d6b4"/><path d="M738 637l12 4-12 4z" fill="#2a2a2a"/><rect x="358" y="628" width="26" height="26" rx="4" fill="#ef7b63"/><rect x="380" y="628" width="10" height="26" fill="#b9b9b9"/></g>
+<path d="M600 700l26-150h52l26 150z" fill="#8a5a3b"/>
+<rect x="596" y="700" width="112" height="16" rx="4" fill="#6e4730"/>
+<path d="M652 690l30-120" stroke="#EEF2EC" stroke-width="4" stroke-linecap="round"/>
+<rect x="670" y="610" width="18" height="12" rx="3" fill="#F2C14E" transform="rotate(14 679 616)"/>
+</svg>

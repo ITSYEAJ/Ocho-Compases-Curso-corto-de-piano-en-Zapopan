@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ocho Compases | Curso corto de piano en Zapopan</title>
+  <meta name="description" content="Curso de piano desde cero en ocho semanas para adultos. Grupos de seis personas, un piano por alumno y recital final en Zapopan, Jalisco.">
+  <meta name="theme-color" content="#123029">
+  <link rel="icon" href="../img/icono.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..800;1,400..600&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script src="../js/pagina5.js" defer></script>
+</head>
+<body class="pagina-piano">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera" id="inicio">
+    <div class="capsula" id="capsula">
+      <a class="marca" href="#inicio" aria-label="Ocho Compases, inicio">
+        <canvas class="piano-logo" id="logo" width="56" height="56" role="img" aria-label="Logotipo de Ocho Compases: una corchea dentro de un círculo verde"></canvas>
+        <span class="marca__texto">Ocho Compases</span>
+      </a>
+
+      <button class="menu-boton" id="menuBoton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="menu" aria-label="Principal">
+        <ul class="nav__lista">
+          <li><a href="#prueba">Pruébalo</a></li>
+          <li><a href="#temario">Temario</a></li>
+          <li><a href="#grupos">Grupos</a></li>
+          <li><a href="#maestros">Maestros</a></li>
+          <li><a class="nav__destacado" href="#inscripcion">Inscríbete</a></li>
+        </ul>
+      </nav>
+      <span class="capsula__avance" aria-hidden="true"><span id="avancePagina"></span></span>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="escena" aria-labelledby="heroeTitulo">
+      <div class="escena__rejilla">
+        <div class="escena__texto">
+          <h1 class="escena__titulo" id="heroeTitulo">Toca tu primera canción completa en ocho semanas.</h1>
+          <p class="escena__entrada">Curso corto de piano para personas adultas que empiezan desde cero. Grupos de seis, un piano para cada quien y un recital con público al terminar.</p>
+          <div class="acciones">
+            <a class="boton boton--primario" href="#inscripcion">Apartar mi lugar</a>
+            <a class="boton boton--linea" href="#prueba">Tomar la primera lección aquí</a>
+          </div>
+        </div>
+        <div class="escena__lado">
+          <figure class="escena__partitura" aria-labelledby="escenaPie">
+            <svg class="partitura-portada" id="partituraPortada" viewBox="0 0 640 260" role="img" aria-label="Pentagrama con las primeras notas de Oda a la alegría"></svg>
+            <figcaption id="escenaPie">Oda a la alegría: la tocas con la mano derecha al terminar la primera semana.</figcaption>
+          </figure>
+          <div class="cohorte" id="cohorte">
+            <p class="cohorte__fecha">Siguiente grupo: <strong id="cohorteFecha">próximo lunes</strong></p>
+            <div class="cohorte__barra" role="img" id="cohorteBarra" aria-label="Lugares ocupados">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p class="cohorte__nota" id="cohorteNota">Quedan lugares en los tres horarios.</p>
+          </div>
+        </div>
+      </div>
+      <div class="escena__piano">
+        <p class="escena__pista" id="pistaPortada">Toca cualquier tecla</p>
+        <svg class="teclado-portada" id="tecladoPortada" viewBox="0 0 1470 170" role="group" aria-label="Teclado de tres octavas para tocar libremente" preserveAspectRatio="none"></svg>
+        <div class="notas-flotantes" id="notasFlotantes" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="seccion hoja piano-prueba" id="prueba" aria-labelledby="pruebaTitulo">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <h2 class="seccion__titulo" id="pruebaTitulo">Tu primera lección, ahora mismo</h2>
+          <p>Elige una melodía y toca la tecla que se ilumina. Arriba ves la misma nota en el pentagrama: así empiezas a leer música sin darte cuenta.</p>
+        </div>
+
+        <div class="piano-panel">
+          <div class="piano-controles">
+            <div class="segmentado" role="radiogroup" aria-label="Melodía" id="melodias">
+              <button type="button" role="radio" aria-checked="true" data-melodia="oda">Oda a la alegría</button>
+              <button type="button" role="radio" aria-checked="false" data-melodia="estrellita">Estrellita</button>
+              <button type="button" role="radio" aria-checked="false" data-melodia="cumple">Cumpleaños feliz</button>
+              <button type="button" role="radio" aria-checked="false" data-melodia="libre">Tocar libre</button>
+            </div>
+            <div class="piano-controles__extra">
+              <label class="interruptor"><input type="checkbox" id="verNombres" checked><span>Nombres de notas</span></label>
+              <label class="interruptor"><input type="checkbox" id="conSonido" checked><span>Sonido</span></label>
+              <button class="boton boton--texto" type="button" id="escuchar">Escuchar la melodía</button>
+              <button class="boton boton--texto" type="button" id="reiniciar">Empezar de nuevo</button>
+            </div>
+          </div>
+
+          <div class="pentagrama-caja">
+            <svg class="pentagrama" id="pentagrama" viewBox="0 0 960 150" role="img" aria-label="Pentagrama con las notas de la melodía"></svg>
+          </div>
+
+          <div class="piano-estado">
+            <p class="piano-estado__texto" id="estadoLeccion" aria-live="polite">Toca la tecla que brilla.</p>
+            <div class="progreso" role="progressbar" aria-label="Avance de la melodía" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progresoLeccion"><span></span></div>
+          </div>
+
+          <div class="teclado-caja">
+            <svg class="teclado" id="teclado" viewBox="0 0 700 220" role="group" aria-label="Teclado de piano de dos octavas"></svg>
+          </div>
+          <p class="piano-ayuda">También puedes usar el teclado de tu computadora: <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>F</kbd> <kbd>G</kbd> <kbd>H</kbd> <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>Ñ</kbd> son teclas blancas y <kbd>W</kbd> <kbd>E</kbd> <kbd>T</kbd> <kbd>Y</kbd> <kbd>U</kbd> <kbd>O</kbd> <kbd>P</kbd> las negras. Con <kbd>Mayús</kbd> suenan una octava más arriba.</p>
+
+          <div class="piano-logro" id="logro" hidden>
+            <p class="piano-logro__titulo" id="logroTitulo">Melodía completa</p>
+            <p id="logroTexto"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion pizarra" id="temario" aria-labelledby="temarioTitulo">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <h2 class="seccion__titulo" id="temarioTitulo">Ocho semanas, ocho compases</h2>
+          <p>Cada semana es un compás de tu partitura: empieza con una sola nota y termina lleno. Elige un compás para ver qué aprendes, o escucha cómo crece la música de la primera a la octava semana.</p>
+        </div>
+
+        <div class="partitura" id="partitura">
+          <div class="partitura__compases" role="tablist" aria-label="Semanas del curso" id="compases">
+            <button class="compas" type="button" role="tab" id="compas1" aria-selected="true" aria-controls="semanaPanel" data-semana="0"><svg class="compas__notas" viewBox="0 0 120 120" aria-hidden="true"></svg><span class="compas__num">Semana 1</span></button>
+            <button class="compas" type="button" role="tab" id="compas2" aria-selected="false" aria-controls="semanaPanel" data-semana="1" tabindex="-1"><svg class="compas__notas" viewBox="0 0 120 120" aria-hidden="true"></svg><span class="compas__num">Semana 2</span></button>
+            <button class="compas" type="button" role="tab" id="compas3" aria-selected="false" aria-controls="semanaPanel" data-semana="2" tabindex="-1"><svg class="compas__notas" viewBox="0 0 120 120" aria-hidden="true"></svg><span class="compas__num">Semana 3</span></button>
+            <button class="compas" type="button" role="tab" id="compas4" aria-selected="false" aria-controls="semanaPanel" data-semana="3" tabindex="-1"><svg class="compas__notas" viewBox="0 0 120 120" aria-hidden="true"></svg><span class="compas__num">Semana 4</span></button>
+            <button class="compas" type="button" role="tab" id="compas5" aria-selected="false" aria-controls="semanaPanel" data-semana="4" tabindex="-1"><svg class="compas__notas" viewBox="0 0 120 120" aria-hidden="true"></svg><span class="compas__num">Semana 5</span></button>
+            <button class="compas" type="button" role="tab" id="compas6" aria-selected="false" aria-controls="semanaPanel" data-semana="5" tabindex="-1"><svg class="compas__notas" viewBox="0 0 120 120" aria-hidden="true"></svg><span class="compas__num">Semana 6</span></button>
+            <button class="compas" type="button" role="tab" id="compas7" aria-selected="false" aria-controls="semanaPanel" data-semana="6" tabindex="-1"><svg class="compas__notas" viewBox="0 0 120 120" aria-hidden="true"></svg><span class="compas__num">Semana 7</span></button>
+            <button class="compas" type="button" role="tab" id="compas8" aria-selected="false" aria-controls="semanaPanel" data-semana="7" tabindex="-1"><svg class="compas__notas" viewBox="0 0 120 120" aria-hidden="true"></svg><span class="compas__num">Semana 8</span></button>
+            <span class="partitura__cabezal" id="cabezal" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="semana-panel" id="semanaPanel" role="tabpanel" aria-labelledby="compas1" tabindex="0">
+          <p class="semana-panel__num" id="semanaNum">Semana 1</p>
+          <h3 class="semana-panel__titulo" id="semanaTitulo">Postura y tus primeras cinco notas</h3>
+          <p id="semanaTexto">Cómo sentarte, dónde poner las manos y cómo encontrar el Do central sin buscarlo.</p>
+          <p class="semana-panel__pieza" id="semanaPieza">Al terminar tocas: <strong>Oda a la alegría</strong> con la mano derecha.</p>
+        </div>
+
+        <div class="acciones partitura__acciones">
+          <button class="boton boton--primario" type="button" id="tocarPartitura" aria-pressed="false">Escuchar las ocho semanas</button>
+          <p class="nota">Cada clase dura 90 minutos: media hora de lectura, media de técnica y media tocando juntos. Entre clases practicas de 15 a 20 minutos al día.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion hoja" id="metronomo" aria-labelledby="metronomoTitulo">
+      <div class="contenedor piano-metro">
+        <div class="piano-metro__texto">
+          <h2 class="seccion__titulo" id="metronomoTitulo">Practica a tiempo</h2>
+          <p>El metrónomo es la herramienta que más usamos en clase. Empieza lento, a 60 pulsos por minuto, y sube de cinco en cinco cuando la pieza salga limpia tres veces seguidas. Mira el logotipo de arriba: late contigo.</p>
+          <p class="nota">Toca la tecla <kbd>Espacio</kbd> para iniciarlo o detenerlo cuando el botón tenga el foco. También puedes marcar tu propio pulso con el botón de golpe.</p>
+        </div>
+        <div class="metro" id="metro">
+          <svg class="metro__svg" viewBox="0 0 200 240" aria-hidden="true">
+            <path d="M60 220 84 30h32l24 190z" fill="var(--piano-madera)"/>
+            <path d="M68 214 88 42h24l20 172z" fill="var(--piano-madera-oscura)"/>
+            <rect x="52" y="214" width="96" height="16" rx="4" fill="var(--piano-madera)"/>
+            <g class="metro__pendulo" id="pendulo">
+              <path d="M100 200V56" stroke="var(--color-2)" stroke-width="4" stroke-linecap="round"/>
+              <rect x="90" y="96" width="20" height="16" rx="3" fill="var(--color-3)"/>
+            </g>
+            <circle cx="100" cy="200" r="7" fill="var(--color-3)"/>
+          </svg>
+          <div class="metro__panel">
+            <p class="metro__bpm"><output id="bpmValor" for="bpm">60</output><span>pulsos por minuto</span></p>
+            <p class="metro__nombre" id="bpmNombre">Adagio</p>
+            <label class="visually-hidden" for="bpm">Velocidad del metrónomo</label>
+            <input class="metro__rango" id="bpm" type="range" min="40" max="200" step="1" value="60">
+            <div class="metro__pulsos" id="pulsos" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <div class="acciones">
+              <button class="boton boton--primario" type="button" id="metroIniciar" aria-pressed="false">Iniciar</button>
+              <button class="boton boton--linea" type="button" id="metroGolpe">Marcar pulso</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion pizarra" id="grupos" aria-labelledby="gruposTitulo">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <h2 class="seccion__titulo" id="gruposTitulo">Elige tu grupo</h2>
+          <p>Tres funciones, el mismo temario. Cada grupo tiene seis butacas para que la maestra escuche a cada quien; las ocupadas ya están marcadas.</p>
+        </div>
+
+        <div class="boletos" id="listaGrupos">
+          <article class="boleto" data-grupo="tarde">
+            <div class="boleto__cuerpo">
+              <p class="boleto__funcion">Función entre semana</p>
+              <h3 class="boleto__nombre">Martes y jueves</h3>
+              <p class="boleto__horario">19:00 a 20:30</p>
+              <p class="boleto__inicio">Empieza el <strong data-inicio="tarde">—</strong></p>
+              <div class="lugares" data-ocupados="4" data-total="6">
+                <span class="butacas" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></span>
+                <span class="lugares__texto"></span>
+              </div>
+              <p class="boleto__desc">Dieciséis clases en ocho semanas. El ritmo ideal si quieres avanzar rápido.</p>
+            </div>
+            <div class="boleto__talon">
+              <p class="boleto__admite">Admite 1</p>
+              <button class="boton boton--primario boton--bloque" type="button" data-elegir="tarde">Elegir</button>
+            </div>
+          </article>
+          <article class="boleto boleto--destacado" data-grupo="sabado">
+            <div class="boleto__cuerpo">
+              <p class="boleto__funcion">Función de sábado</p>
+              <h3 class="boleto__nombre">Sábado intensivo</h3>
+              <p class="boleto__horario">10:00 a 13:00</p>
+              <p class="boleto__inicio">Empieza el <strong data-inicio="sabado">—</strong></p>
+              <div class="lugares" data-ocupados="5" data-total="6">
+                <span class="butacas" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></span>
+                <span class="lugares__texto"></span>
+              </div>
+              <p class="boleto__desc">Una mañana a la semana con descanso a la mitad. Se llena primero.</p>
+            </div>
+            <div class="boleto__talon">
+              <p class="boleto__admite">Admite 1</p>
+              <button class="boton boton--primario boton--bloque" type="button" data-elegir="sabado">Elegir</button>
+            </div>
+          </article>
+          <article class="boleto" data-grupo="linea">
+            <div class="boleto__cuerpo">
+              <p class="boleto__funcion">Función en línea</p>
+              <h3 class="boleto__nombre">Miércoles</h3>
+              <p class="boleto__horario">20:00 a 21:30</p>
+              <p class="boleto__inicio">Empieza el <strong data-inicio="linea">—</strong></p>
+              <div class="lugares" data-ocupados="2" data-total="6">
+                <span class="butacas" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></span>
+                <span class="lugares__texto"></span>
+              </div>
+              <p class="boleto__desc">Por videollamada con cámara sobre el teclado. Necesitas un teclado de 61 teclas.</p>
+            </div>
+            <div class="boleto__talon">
+              <p class="boleto__admite">Admite 1</p>
+              <button class="boton boton--primario boton--bloque" type="button" data-elegir="linea">Elegir</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="incluye">
+          <img class="incluye__img" src="../img/cuaderno.svg" alt="Cuaderno de práctica amarillo de Ocho Compases con un lápiz y un metrónomo" width="800" height="800" loading="lazy">
+          <div>
+            <p class="incluye__monto">₡86&nbsp;000 <span>CRC por el curso completo</span></p>
+            <p>O dos pagos de ₡46&nbsp;000: al inscribirte y en la cuarta semana.</p>
+            <ul class="lista-check">
+              <li>Cuaderno de práctica impreso</li>
+              <li>Un piano para ti en cada clase</li>
+              <li>Dos horas semanales de salón de práctica</li>
+              <li>Recital con video de tu presentación</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion hoja" id="maestros" aria-labelledby="maestrosTitulo">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <h2 class="seccion__titulo" id="maestrosTitulo">Quién te enseña</h2>
+          <p>Dos maestros, un mismo método y muchos años enseñando a personas que creían que ya era tarde para aprender.</p>
+        </div>
+        <div class="maestros">
+          <article class="maestro">
+            <img class="maestro__foto" src="../img/maestra-lucia.svg" alt="Ilustración de la maestra Lucía Ibarra" width="600" height="600" loading="lazy">
+            <div>
+              <h3>Lucía Ibarra</h3>
+              <p class="maestro__rol">Piano y dirección del curso</p>
+              <p>Pianista egresada de la Universidad de Guadalajara. Diseñó el método de ocho semanas después de doce años dando clases particulares a adultos.</p>
+            </div>
+          </article>
+          <article class="maestro">
+            <img class="maestro__foto" src="../img/maestro-ramon.svg" alt="Ilustración del maestro Ramón Anaya" width="600" height="600" loading="lazy">
+            <div>
+              <h3>Ramón Anaya</h3>
+              <p class="maestro__rol">Lectura musical y grupo en línea</p>
+              <p>Fue maestro de solfeo en escuelas de iniciación artística durante veinte años. Convierte la teoría en juegos que se recuerdan.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="salon">
+          <img class="salon__img" src="../img/aula.svg" alt="Salón con pizarrón pautado, un piano vertical y un banco" width="1200" height="800" loading="lazy">
+          <div>
+            <h3 class="salon__titulo">El salón</h3>
+            <p>Seis pianos digitales con teclas de peso real y audífonos, para que cada quien practique sin escuchar a los demás, y un piano vertical acústico para el trabajo con la maestra.</p>
+            <p>Los alumnos inscritos pueden apartar el salón de práctica dos horas a la semana, de lunes a viernes entre 10:00 y 16:00.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recital" id="recital" aria-labelledby="recitalTitulo">
+      <div class="recital__escenario" id="escenario">
+        <img class="recital__img" src="../img/recital.svg" alt="Piano de cola iluminado por un reflector en un escenario, con el público al frente" width="1200" height="800" loading="lazy">
+        <span class="recital__sombra" aria-hidden="true"></span>
+      </div>
+      <div class="recital__texto">
+        <h2 class="seccion__titulo" id="recitalTitulo">La octava clase es el recital</h2>
+        <p>Cada alumno toca una pieza completa frente a su familia y amigos, sin partitura en la parte difícil. Te llevas el video de tu presentación y una constancia. Mueve el mouse sobre el escenario: el reflector te sigue.</p>
+      </div>
+    </section>
+
+    <section class="seccion hoja" id="preguntas" aria-labelledby="preguntasTitulo">
+      <div class="contenedor contenedor--angosto">
+        <h2 class="seccion__titulo" id="preguntasTitulo">Preguntas frecuentes</h2>
+        <div class="acordeon">
+          <details>
+            <summary>¿Necesito tener piano en casa?</summary>
+            <p>Ayuda mucho, pero no es obligatorio. Un teclado de 61 teclas es suficiente, podemos rentarte uno por ₡9&nbsp;500 al mes, o puedes practicar en nuestro salón.</p>
+          </details>
+          <details>
+            <summary>Tengo más de 50 años, ¿no es tarde?</summary>
+            <p>No. La mitad de nuestros alumnos tiene más de 40 años. El curso está pensado para manos que nunca han tocado un instrumento.</p>
+          </details>
+          <details>
+            <summary>¿Qué pasa si falto a una clase?</summary>
+            <p>Puedes reponerla en otro grupo esa misma semana, o tomar una sesión de 30 minutos en línea sin costo.</p>
+          </details>
+          <details>
+            <summary>¿Qué sigue después de las ocho semanas?</summary>
+            <p>Un segundo nivel de ocho semanas con repertorio popular y acompañamiento de canciones. Quienes terminan el primero tienen 10 % de descuento.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion pizarra" id="inscripcion" aria-labelledby="inscripcionTitulo">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <h2 class="seccion__titulo" id="inscripcionTitulo">Aparta tu butaca</h2>
+          <p>Completa tus datos y te enviamos por WhatsApp la forma de pago. Tu lugar queda apartado 48 horas.</p>
+        </div>
+
+        <div class="inscripcion">
+          <form class="inscripcion__form" id="formInscripcion" novalidate>
+            <div class="campo">
+              <label for="insNombre">Nombre completo</label>
+              <input id="insNombre" name="nombre" type="text" autocomplete="name" required minlength="3" maxlength="80">
+              <p class="campo__error" id="errorInsNombre"></p>
+            </div>
+            <div class="campo-fila">
+              <div class="campo">
+                <label for="insCorreo">Correo</label>
+                <input id="insCorreo" name="correo" type="email" autocomplete="email" required maxlength="120">
+                <p class="campo__error" id="errorInsCorreo"></p>
+              </div>
+              <div class="campo">
+                <label for="insTelefono">WhatsApp</label>
+                <input id="insTelefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required placeholder="33 1234 5678" maxlength="20">
+                <p class="campo__error" id="errorInsTelefono"></p>
+              </div>
+            </div>
+            <div class="campo">
+              <label for="insGrupo">Grupo</label>
+              <select id="insGrupo" name="grupo" required>
+                <option value="">Elige un horario</option>
+                <option value="tarde">Entre semana: martes y jueves, 19:00</option>
+                <option value="sabado">Sábado intensivo: 10:00 a 13:00</option>
+                <option value="linea">En línea: miércoles, 20:00</option>
+              </select>
+              <p class="campo__error" id="errorInsGrupo"></p>
+            </div>
+            <fieldset class="campo-grupo">
+              <legend>¿Dónde vas a practicar?</legend>
+              <div class="opciones">
+                <label class="opcion"><input type="radio" name="practica" value="propio" checked><span class="opcion__texto">Tengo piano o teclado</span></label>
+                <label class="opcion"><input type="radio" name="practica" value="renta"><span class="opcion__texto">Quiero rentar un teclado<small>₡9&nbsp;500 al mes, se entrega en la primera clase</small></span></label>
+                <label class="opcion"><input type="radio" name="practica" value="salon"><span class="opcion__texto">Practicaré en el salón</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="campo-grupo">
+              <legend>Forma de pago</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="pago" value="unico" checked><span>Un pago de ₡86&nbsp;000</span></label>
+                <label class="chip"><input type="radio" name="pago" value="dos"><span>Dos pagos de ₡46&nbsp;000</span></label>
+              </div>
+            </fieldset>
+            <input class="trampa" type="text" name="sitio" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="boton boton--primario boton--bloque" type="submit">Apartar mi lugar</button>
+          </form>
+
+          <aside class="inscripcion__resumen" aria-labelledby="insResumenTitulo">
+            <p class="inscripcion__admite">Admite 1</p>
+            <h3 id="insResumenTitulo">Tu boleto</h3>
+            <dl class="resumen-lista" id="insResumen"></dl>
+            <p class="inscripcion__total">Hoy pagas <strong id="insHoy">₡86&nbsp;000</strong></p>
+            <p class="nota" id="insNota">El lugar se aparta con el primer pago.</p>
+          </aside>
+        </div>
+
+        <div class="confirmacion" id="confirmacion" tabindex="-1" hidden>
+          <svg class="confirmacion__icono" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="3"/><path d="M14 25l7 7 13-15" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3 class="confirmacion__titulo">Tu lugar está apartado por 48 horas</h3>
+          <p id="confirmacionTexto"></p>
+          <dl class="confirmacion__datos" id="confirmacionDatos"></dl>
+          <div class="acciones">
+            <a class="boton boton--primario" id="confirmacionCorreo" href="#">Enviar por correo</a>
+            <button class="boton boton--linea" type="button" id="confirmacionIcs">Agregar primera clase al calendario</button>
+            <button class="boton boton--texto" type="button" id="confirmacionOtra">Inscribir a otra persona</button>
+          </div>
+          <p class="nota">Esta página no envía tus datos a ningún servidor: el botón de correo abre tu aplicación con el mensaje listo.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__teclas" aria-hidden="true"></div>
+    <div class="contenedor pie__rejilla">
+      <div class="pie__marca">
+        <p class="pie__nombre">Ocho Compases</p>
+        <p>Cursos cortos de piano para adultos en Zapopan, Jalisco.</p>
+      </div>
+      <div>
+        <h2 class="pie__titulo">Ubicación</h2>
+        <p>Calle Pino 214, Col. Ciudad Granja, Zapopan, Jal.</p>
+        <p>Frente al parque, con estacionamiento en la calle.</p>
+      </div>
+      <div>
+        <h2 class="pie__titulo">Horario de atención</h2>
+        <ul class="pie__lista">
+          <li>Lunes a viernes, 16:00 a 21:00</li>
+          <li>Sábado, 9:00 a 14:00</li>
+          <li id="pieEstado" class="pie__estado"></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="pie__titulo">Contacto</h2>
+        <ul class="pie__lista">
+          <li><a href="mailto:hola@ochocompases.mx">hola@ochocompases.mx</a></li>
+          <li><a href="tel:+523319024488">WhatsApp 33 1902 4488</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contenedor pie__legal">
+      <p>© 2026 Ocho Compases. Proyecto académico de Desarrollo Web I.</p>
+      <p>Ilustraciones hechas en SVG para este sitio.</p>
+    </div>
+  </footer>
+</body>
+</html>

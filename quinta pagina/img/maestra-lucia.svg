@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Ilustración de la maestra Lucía Ibarra">
+<title>Ilustración de la maestra Lucía Ibarra</title>
+
+<rect width="600" height="600" fill="#dfe8e2"/>
+<circle cx="300" cy="300" r="230" fill="#F2C14E"/>
+<path d="M190 300C180 180 250 150 300 150C360 150 420 190 410 300L420 470H180Z" fill="#2a1d18"/>
+<path d="M130 600C140 480 210 430 300 430C390 430 460 480 470 600Z" fill="#1E4D40"/>
+<path d="M250 440L300 500L350 440" fill="none" stroke="#EEF2EC" stroke-width="10" stroke-linejoin="round"/>
+<path d="M268 380h64v70c-20 14-44 14-64 0z" fill="#a9744f"/>
+<ellipse cx="300" cy="300" rx="96" ry="112" fill="#c98f6b"/>
+<ellipse cx="206" cy="312" rx="14" ry="22" fill="#c98f6b"/><ellipse cx="394" cy="312" rx="14" ry="22" fill="#c98f6b"/>
+<path d="M204 290C200 200 250 176 300 176C350 176 402 200 396 290C380 240 340 214 300 212C260 214 222 240 204 290Z" fill="#2a1d18"/><circle cx="300" cy="150" r="40" fill="#2a1d18"/>
+<path d="M258 300q12-10 24 0M318 300q12-10 24 0" stroke="#2a211d" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M270 358q30 22 60 0" stroke="#2a211d" stroke-width="5" fill="none" stroke-linecap="round"/>
+<ellipse cx="248" cy="336" rx="16" ry="9" fill="#e98a7a" opacity=".35"/><ellipse cx="352" cy="336" rx="16" ry="9" fill="#e98a7a" opacity=".35"/>
+
+</svg>
