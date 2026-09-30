@@ -50,18 +50,6 @@ quinta pagina/
 
 `public/index.html` enlaza su CSS y su JS subiendo un nivel: `../css/estilos.css` y `../js/pagina5.js`. Dentro de `public/` solo está el HTML, sin CSS ni JavaScript mezclados.
 
-## Requisitos de la práctica
-
-- [x] Encabezado (`<header>`) con el nombre del sitio y un menú con cinco enlaces internos
-- [x] Canvas como logotipo: círculo de unos 56 × 56 px junto al nombre, con un símbolo dentro
-- [x] Nueve secciones (`<section>`) con texto propio sobre el tema
-- [x] Pie de página (`<footer>`) con ubicación, horario y contacto
-- [x] Tres colores de una misma paleta usados en el canvas, el encabezado y los acentos
-- [x] HTML, CSS y JavaScript en carpetas separadas
-- [x] Imágenes SVG
-- [x] Responsive en computadora y celular
-- [x] Animaciones, transiciones y transformaciones
-
 ## Responsive
 
 1. La etiqueta de viewport en el `<head>`:
